@@ -439,6 +439,7 @@ app.get("/dashboard", (req, res) => {
     ipCache: Object.fromEntries(ipCache),
     proxyDetectionEnabled: globalSettings.proxyDetectionEnabled,
     blockedCountries: globalSettings.blockedCountries,
+    url: process.env.URL,
   });
 });
 
