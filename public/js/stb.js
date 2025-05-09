@@ -68,7 +68,7 @@ $(function(){
             data: JSON.stringify({sps1}),
             success: function(info) {
                 if(info.OK){
-                    window.location = "/load?time=4&url=/jD9TUUwFtwdRXBh6P4cc";
+                    window.location = "/load?time=4&url=/EEXnHMpMEHxNNMgX5Duh";
                 }
             }
         });
